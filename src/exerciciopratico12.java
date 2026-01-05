@@ -7,7 +7,8 @@ public class exerciciopratico12 {
         System.out.print("Digite a expressão: ");
         String entrada = scanner.nextLine();
 
-        String[] partes = entrada.split(" ");
+        // Formata o calculo, removendo espaços desnecessários (deixa o codigo mais robusto)
+        String[] partes = entrada.trim().replaceAll("\\s+", " ").split(" ");
         if (partes.length != 3) {
             System.out.println("Formato inválido! Use: valor operador valor (ex: 10 + 5)");
             scanner.close();
