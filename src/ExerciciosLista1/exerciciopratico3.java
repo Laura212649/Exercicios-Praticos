@@ -1,3 +1,5 @@
+package ExerciciosLista1;
+
 public class exerciciopratico3 {
     public static void main(String[] args) {
         int valorInt = 45;

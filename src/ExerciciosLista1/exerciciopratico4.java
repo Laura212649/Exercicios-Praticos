@@ -1,3 +1,5 @@
+package ExerciciosLista1;
+
 public class exerciciopratico4 {
     public static void main(String[] args) {
         char letra = 'a';
