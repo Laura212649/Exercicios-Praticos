@@ -13,7 +13,6 @@ public class Main {
         shapes.add(new Circle(3));
 
         for (Shape shape : shapes) {
-            System.out.println(shape);
             System.out.println("Círculo\nÁrea: " + shape.calculateArea());
             System.out.println("Perímetro: " + shape.calculatePerimeter());
             System.out.println("-------");
@@ -25,10 +24,8 @@ public class Main {
         shapes.add(new Rectangle(8, 9));
 
         for (Shape shape : shapes) {
-            System.out.println(shape);
             System.out.println("Retângulo\nÁrea: " + shape.calculateArea());
             System.out.println("Perímetro: " + shape.calculatePerimeter());
-            System.out.println("-------");
         }
     }
 }
