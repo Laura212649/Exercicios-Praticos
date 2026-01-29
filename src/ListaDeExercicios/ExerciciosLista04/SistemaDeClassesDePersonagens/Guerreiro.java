@@ -13,4 +13,17 @@ public class Guerreiro extends Personagem {
         super.exibirFicha();
         System.out.println("Força física: " + forcaFisica);
     }
+
+
+    @Override
+    public void receberDano(int pontos) {
+        int danoFinal;
+        if (pontos <= 5) {
+            danoFinal = 1;
+        } else {
+            danoFinal = pontos - 5;
+        }
+        super.receberDano(pontos);
+    }
 }
+

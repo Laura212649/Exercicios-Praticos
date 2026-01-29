@@ -16,4 +16,15 @@ public class Mago extends Personagem {
         System.out.println("Mana: " + mana);
         System.out.println("Inteligência: " + inteligencia);
     }
+
+    @Override
+    public void receberDano(int pontos) {
+        if (this.mana > 10) {
+            int danoReduzido = pontos / 2;
+            mana -= 5;
+            super.receberDano(pontos);
+        } else {
+            super.receberDano(pontos);
+        }
+    }
 }
