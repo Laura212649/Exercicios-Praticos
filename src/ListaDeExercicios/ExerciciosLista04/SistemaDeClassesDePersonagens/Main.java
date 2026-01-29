@@ -1,10 +1,13 @@
 package ListaDeExercicios.ExerciciosLista04.SistemaDeClassesDePersonagens;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         testeGuerreiroAragorn();
         testeMagoGandolf();
         testeDeEstresse();
+        testeTorneioDeHabilidade();
     }
 
     public static void testeGuerreiroAragorn() {
@@ -36,5 +39,17 @@ public class Main {
         System.out.println("\nDepois do ataque da criatura poderosa\n");
         guerreiro.exibirFicha();
         mago.exibirFicha();
+    }
+
+    public static void testeTorneioDeHabilidade() {
+        ArrayList<Personagem> grupoDeAventura = new ArrayList<>();
+
+        grupoDeAventura.add(new Guerreiro("Aragorn", 10, 100, 80));
+        grupoDeAventura.add(new Mago("Gandalf", 20, 80, 150));
+        grupoDeAventura.add(new Arqueiro("Legolas", 30, 70));
+        System.out.println("\n== Teste De Habilidade ==");
+        for (Personagem personagem : grupoDeAventura) {
+            personagem.usarHabilidade();
+        }
     }
 }

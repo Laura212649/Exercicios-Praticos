@@ -14,7 +14,6 @@ public class Guerreiro extends Personagem {
         System.out.println("Força física: " + forcaFisica);
     }
 
-
     @Override
     public void receberDano(int pontos) {
         int danoFinal;
@@ -24,6 +23,12 @@ public class Guerreiro extends Personagem {
             danoFinal = pontos - 5;
         }
         super.receberDano(pontos);
+    }
+
+    @Override
+    public void usarHabilidade() {
+        System.out.println("O guerreiro está usando Golpe de Espada");
+        super.usarHabilidade();
     }
 }
 

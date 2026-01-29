@@ -11,17 +11,24 @@ public class Personagem {
         this.vida = vida;
     }
 
-    public void receberDano(int pontos) {
-        this.vida -= pontos;
-        if (this.vida < 0) {
-            this.vida = 0;
-        }
-    }
-
     public void exibirFicha() {
         System.out.println("Dados Básicos");
         System.out.println("Nome: " + nome);
         System.out.println("Nível: " + nivel);
         System.out.println("Vida: " + vida);
     }
+
+    public void receberDano(int pontos) {
+        this.vida -= pontos;
+        if (this.vida < 0) {
+            this.vida = 0;
+        }
+
+    }
+
+    public void usarHabilidade() {
+        System.out.println("O personagem usa uma habilidade básica");
+    }
+
+
 }

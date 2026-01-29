@@ -27,4 +27,10 @@ public class Mago extends Personagem {
             super.receberDano(pontos);
         }
     }
+
+    @Override
+    public void usarHabilidade() {
+        System.out.println("O mago está lançando Bola de Fogo");
+        super.usarHabilidade();
+    }
 }
